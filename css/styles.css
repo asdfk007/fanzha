@@ -25,25 +25,14 @@ h1, h2 {
 h1 {
     font-size: 2em;
 }
-.quiz {
+.highlights {
     background-color: #f7f9fc;
     padding: 20px;
     border-radius: 10px;
+    margin-top: 20px;
 }
-.quiz-question {
-    margin-bottom: 20px;
-}
-.quiz-options {
-    list-style: none;
-    padding: 0;
-}
-.quiz-options li {
-    margin-bottom: 15px;
-}
-.quiz-options li input[type="radio"] {
-    margin-right: 10px;
-}
-button {
+.cta-button {
+    display: inline-block;
     padding: 12px 25px;
     background-color: #007bff;
     color: #fff;
@@ -52,14 +41,25 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
 }
-button:hover {
+.cta-button:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-.result {
+.case-item {
+    background-color: #f7f9fc;
+    padding: 20px;
+    border-radius: 10px;
     margin-top: 20px;
-    font-weight: bold;
+}
+.case-item h2 a {
     color: #007bff;
+    text-decoration: none;
+}
+.case-item h2 a:hover {
+    text-decoration: underline;
 }
