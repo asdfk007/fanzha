@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>反诈视频</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-container">
+        <video id="myVideo" controls autoplay>
+            <source src="诈骗神曲原版.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+    </div>
+    <script>
+        // Attempt to play the video with sound
+        var video = document.getElementById('myVideo');
+        video.play().then(null, function(error) {
+            // If autoplay with sound failed, mute the video and try autoplaying again
+            video.muted = true;
+            video.play();
+        });
+    </script>
+</body>
+</html>
